@@ -9,9 +9,24 @@ $("document").ready(function(){
    
    $('h1').bind('click', mouseClick);
    
-   //$('#oneButton').bind('click', alertButtonClicked);
+   $('#show').css('visibility', 'hidden');
+   
+   $('#hide').bind('click', hideThePage);
+   
+   $('#show').bind('click', showThePage);
 
 });
+
+function hideThePage(){
+    $('#show').css('visibility', 'visible');
+    $('div').hide('slide', {}, 2500);
+    $('#show').show('fold', {}, 2500);
+}
+
+function showThePage(){
+    $('div').show('fold', {}, 2500);
+    $('#show').hide('puff', {}, 2500);
+}
 
 function mouseOverMe(){
     $("h1").html("Here");
@@ -40,7 +55,7 @@ function removeAPara(){
 }
 
 function addAPara(){
-    $('#randPara').append('<p>ADDED</p>');
+    $('#randPara').append('<p>HI!</p>');
 }
 
 function replaceWText(){
