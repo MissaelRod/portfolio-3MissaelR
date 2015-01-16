@@ -57,9 +57,9 @@ function removeAPara() {
 }
 
 function addAPara() {
-    $('#randPara').append('<p>HI!</p>');
+    $('#randPara').append('<p>ADDED!</p>');
 }
 
 function replaceWText() {
-    $('#replaceWText').text('More pointless randome text!');
+    $('#replaceWText').text('More pointless text!');
 }
