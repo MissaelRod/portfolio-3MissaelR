@@ -1,7 +1,4 @@
 $("document").ready(function() {
-    //$("div p:last-child").css("background-color", "red");
-
-    // $("div p:first-child").css("background-color", "yellow");
 
     $("div:nth-child(1)").css("background-color", "lightgray");
 
@@ -18,7 +15,7 @@ $("document").ready(function() {
     $('#show').bind('click', showThePage);
 
 });
-
+//hides the page when you click a button
 function hideThePage() {
     $('#show').css('visibility', 'visible');
     $('div').hide('slide', {}, 2500);
@@ -42,10 +39,6 @@ function mouseClick() {
     $('p').html('Clicked!!!!!!!!!!!!!!!!');
 }
 
-//function alertButtonClick(){
-// alert("There was a button clicked");
-//}
-
 $('#replaceWText').bind('click', replaceWText);
 
 $('#randPara').bind('click', addAPara);
@@ -57,7 +50,7 @@ function removeAPara() {
 }
 
 function addAPara() {
-    $('#randPara').append('<p>ADDED!</p>');
+    $('#randPara').append('<p>Now Click Number 1!</p>');
 }
 
 function replaceWText() {
